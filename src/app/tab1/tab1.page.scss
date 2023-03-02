@@ -1,0 +1,20 @@
+  .container-coin{
+    display: flex;
+    align-items: center; /*organiza elementos na vertical*/
+    justify-content: center; /*alinha elementos na horizontal*/
+    height: 100%;
+    width: 100%;
+    flex-flow: column; /*deixa o conteúdo inserido do tamanho ideal na tela, só funciona com *tamanho**/
+  }
+
+  img{
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 8px 8px 13px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 8px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 13px 0px rgba(0,0,0,0.75);
+  }
+
+  .btn{
+    cursor: pointer;
+  }
