@@ -7,5 +7,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<h1>Valendo: 1</h1>
+  <div class="container">
+    <h1>Valendo: 1</h1>
+    <div class="buttons">
+      <ion-button>1</ion-button>
+      <ion-button>3</ion-button>
+      <ion-button>6</ion-button>
+      <ion-button>9</ion-button>
+      <ion-button>12</ion-button>
+    </div>
+    <div class="teams">
+      <div class="team1">
+        <h2>Time 1</h2>
+        <ion-button class="btn add">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button class="btn remove">
+          <ion-icon name="remove-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div class="team2">
+        <h2>Time 2</h2>
+        <ion-button class="btn add">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button class="btn remove">
+          <ion-icon name="remove-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="partidas">
+    <h2>Partidas</h2>
+    <h3>Time 1</h3>
+    <h3>Time 2</h3>
+    <ion-button>LIMPAR</ion-button>
+  </div>
 </ion-content>
