@@ -9,37 +9,37 @@
 <ion-content [fullscreen]="true">
   <div class="container">
     <div class="placar">
-      <h1 class="ion-text-center">Valendo: 1</h1>
+      <h1 class="ion-text-center">Valendo: <span>{{ valor }}</span></h1>
       <ion-card color="light">
-      <div class="buttons">
-        <ion-button color="dark">1</ion-button>
-        <ion-button color="dark">3</ion-button>
-        <ion-button color="dark">6</ion-button>
-        <ion-button color="dark">9</ion-button>
-        <ion-button color="dark">12</ion-button>
+      <div class="botoes">
+        <ion-button (click)="add1()" color="dark">1</ion-button>
+        <ion-button (click)="add3()" color="dark">3</ion-button>
+        <ion-button (click)="add6()" color="dark">6</ion-button>
+        <ion-button (click)="add9()" color="dark">9</ion-button>
+        <ion-button (click)="add12()" color="dark">12</ion-button>
       </div>
     </ion-card>
     </div>
     <ion-card color="light">
-    <div class="teams">
-      <div class="team1">
+    <div class="time">
+      <div class="time1">
         <h2>Time 1</h2>
-        <ion-button class="btn add" color="dark">
+        <ion-button class="adicao" color="dark" (click)="addValor()">
           <ion-icon name="add-outline"></ion-icon>
         </ion-button>
-        <h1>0</h1>
-        <ion-button class="btn remove" color="dark">
+        <h1>{{ ponto }}</h1>
+        <ion-button class="subtracao" color="dark" (click)="tiraValor()">
           <ion-icon name="remove-outline"></ion-icon>
         </ion-button>
       </div>
       <h1>X</h1>
-      <div class="team2">
+      <div class="time2">
         <h2>Time 2</h2>
-        <ion-button class="btn add" color="dark">
+        <ion-button class="adicao" color="dark" (click)="addValor2()">
           <ion-icon name="add-outline"></ion-icon>
         </ion-button>
-        <h1>0</h1>
-        <ion-button class="btn remove" color="dark">
+        <h1>{{ ponto2 }}</h1>
+        <ion-button class="subtracao" color="dark" (click)="tiraValor2()">
           <ion-icon name="remove-outline"></ion-icon>
         </ion-button>
       </div>
@@ -49,17 +49,17 @@
     <div class="partidas">
       <h2>Partidas</h2>
       <div class="contador">
-        <div class="team">
+        <div class="time">
           <h3>TIME 1</h3>
-          <span>0</span>
+          <span>{{ partida }}</span>
         </div>
-        <div class="team">
+        <div class="time">
           <h3>TIME 2</h3>
-          <span>0</span>
+          <span>{{ partida2 }}</span>
         </div>
       </div>
     </div>
   </ion-card>
+  <ion-button (click)="limpar()">LIMPAR</ion-button>
   </div>
-
 </ion-content>

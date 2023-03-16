@@ -18,19 +18,19 @@
       color: azure;
     }
 
-    .buttons{
+    .botoes{
       display: flex;
       justify-content: space-between;
       padding: 10px;
     }
   }
 
-  .teams{
+  .time{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .team1, .team2{
+    .time1, .time2{
       padding: 10px;
       display: flex;
       flex-flow: column;
@@ -55,7 +55,7 @@
     }
 
     .contador{
-      .team{
+      .time{
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
