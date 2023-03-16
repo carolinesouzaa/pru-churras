@@ -1,4 +1,72 @@
-.teams{
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   display: flex;
+  flex-flow: column;
   justify-content: space-around;
+  background-color: #303030;
+  .placar{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    border-radius: 35%;
+
+    h1{
+      text-align: center;
+      margin: 0;
+      color: azure;
+    }
+
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  }
+
+  .teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .team1, .team2{
+      padding: 10px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2{
+      margin: 0;
+    }
+  }
+
+  .partidas{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    border-radius: 35%;
+
+    h2{
+      text-align: center;
+      margin: 0;
+    }
+
+    .contador{
+      .team{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3{
+          margin: 0;
+        }
+      }
+    }
+  }
 }
+
+
