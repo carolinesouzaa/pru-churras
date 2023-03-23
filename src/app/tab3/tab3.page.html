@@ -7,11 +7,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class=container>
+    <ion-item>
+      <ion-label>Tamanho:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <img src="../../assets/dado.jpg" alt="">
+    <h3>Valor do dado: </h3>
+    <ion-button color="dark">Jogar o dado!</ion-button>
+  </div>
 </ion-content>

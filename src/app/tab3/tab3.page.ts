@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
+  tamanho = "";
+  imagem = "assets/dado.jpg";
+  gif = "assets/gif dado.webp";
+  valorDado = 0;
+
   constructor() {}
 
 }
